@@ -13,7 +13,8 @@ namespace FestivalVar.Data
             : base(options)
         {
         }
-        
-        
+
+        public DbSet<User> UsersContext { get; set; }
+        public DbSet<Festival> Festivals { get; set; }
     }
 }

@@ -19,6 +19,8 @@ namespace FestivalVar.Installers
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<DataContext>();
 
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IFestivalService, FestivalService>();
         }
     }
 }
