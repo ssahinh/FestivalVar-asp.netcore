@@ -28,8 +28,8 @@ namespace FestivalVar.Controllers
 
             var response = new FestivalResponse
             {
-                Code = "200",
-                Message = "success",
+                Code = "success",
+                Message = "festival.get.success",
                 Data = model,
             };
             

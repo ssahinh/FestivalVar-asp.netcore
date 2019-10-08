@@ -20,6 +20,7 @@ namespace FestivalVar.Installers
                 .AddEntityFrameworkStores<DataContext>();
 
             services.AddScoped<IFestivalService, FestivalService>();
+            services.AddScoped<ICategoryService, CategoryService>();
         }
     }
 }

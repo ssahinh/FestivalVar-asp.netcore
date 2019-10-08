@@ -60,6 +60,8 @@ namespace FestivalVar.Controllers
             return Ok(new AuthSuccessResponse
             {
                 Token = authResponse.Token,
+                Code = null,
+                Message = null,
                 Data = authResponse.Data
             });
         }
