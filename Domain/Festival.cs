@@ -1,4 +1,6 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace FestivalVar.Domain
 {
@@ -10,5 +12,10 @@ namespace FestivalVar.Domain
         public string Title { get; set; }
         
         public string City { get; set; }
+
+        public int CategoryId { get; set; }
+        
+        [ForeignKey("CategoryId")]
+        public Category Category;
     }
 }
