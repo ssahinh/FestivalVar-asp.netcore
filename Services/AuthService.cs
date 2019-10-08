@@ -101,7 +101,8 @@ namespace FestivalVar.Services
             return new AuthenticationResult
             {
                 Success = true,
-                Token = tokenHandler.WriteToken(token)
+                Token = tokenHandler.WriteToken(token),
+                Data = newUser
             };
         }
         
