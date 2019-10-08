@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 using FestivalVar.Domain;
-using FestivalVar.Requests;
+using FestivalVar.Domain.Utils.Request;
 using FestivalVar.Responses;
 using FestivalVar.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FestivalVar.Controllers
 {
-    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Route("api/[controller]")]
     [ApiController]
     public class FestivalController : Controller

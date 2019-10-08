@@ -1,4 +1,4 @@
-namespace FestivalVar.Requests
+namespace FestivalVar.Domain.Utils.Request
 {
     public class CreateFestivalRequest
     {

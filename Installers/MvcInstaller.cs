@@ -20,7 +20,7 @@ namespace FestivalVar.Installers
 
             services.AddSingleton(jwtSettings);
 
-            services.AddScoped<IIdentityService, IdentityService>();
+            services.AddScoped<IAuthService, AuthService>();
             
             services.AddAuthentication(x =>
             {
