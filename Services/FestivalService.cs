@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using FestivalVar.Data;
 using FestivalVar.Domain;
@@ -27,6 +28,11 @@ namespace FestivalVar.Services
             var created = await _dataContext.SaveChangesAsync();
 
             return created > 0;
+        }
+
+        public Task<Festival> GetFestivalById(int festivalId)
+        {
+            return _dataContext.Festivals.SingleOrDefaultAsync(x => x.Id == festivalId);
         }
     }
 }

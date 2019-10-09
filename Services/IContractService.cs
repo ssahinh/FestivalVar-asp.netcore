@@ -7,6 +7,6 @@ namespace FestivalVar.Services
     public interface IContractService
     {
         Task<List<Contract>> GetContractsAsync();
-        Task<Contract> GetContractById(int Id);
+        Task<Contract> GetContractByIdAsync(int Id);
     }
 }

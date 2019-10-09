@@ -9,5 +9,7 @@ namespace FestivalVar.Services
         Task<List<Festival>> GetFestivalsAsync();
         
         Task<bool> CreateFestivalAsync(Festival festival);
+
+        Task<Festival> GetFestivalById(int festivalId);
     }
 }

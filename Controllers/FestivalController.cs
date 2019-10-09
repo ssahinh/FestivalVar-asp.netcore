@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FestivalVar.Controllers
 {
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Route("api/[controller]")]
     [ApiController]
     public class FestivalController : Controller
@@ -55,6 +55,20 @@ namespace FestivalVar.Controllers
             };
 
             return Created("",response);
+        }
+
+        [HttpGet("{festivalId}")]
+        public async Task<IActionResult> Get([FromRoute] int festivalId)
+        {
+            var model = await _festivalService.GetFestivalById(festivalId);
+
+            if (model == null)
+            {
+                return NotFound();
+            }
+            
+
+            return Ok(model);
         }
     }
 }

@@ -15,7 +15,7 @@ namespace FestivalVar.Services
             return await _dataContext.Contracts.ToListAsync();
         }
 
-        public async Task<Contract> GetContractById(int Id)
+        public async Task<Contract> GetContractByIdAsync(int Id)
         {
             return await _dataContext.Contracts.SingleOrDefaultAsync(x => x.Id == Id);        }
     }
