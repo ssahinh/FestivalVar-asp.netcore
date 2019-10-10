@@ -9,7 +9,12 @@ namespace FestivalVar.Services
     public class ContractService : IContractService
     {
         private readonly DataContext _dataContext;
-        
+
+        public ContractService(DataContext dataContext)
+        {
+            _dataContext = dataContext;
+        }
+
         public async Task<List<Contract>> GetContractsAsync()
         {
             return await _dataContext.Contracts.ToListAsync();

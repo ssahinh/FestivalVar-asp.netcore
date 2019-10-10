@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 
 namespace FestivalVar.Domain
 {
@@ -10,5 +12,7 @@ namespace FestivalVar.Domain
         public string Title { get; set; }
         
         public string Description { get; set; }
+    
+        public List<IdentityUser> Users { get; set; }
     }
 }
