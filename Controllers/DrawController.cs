@@ -28,7 +28,7 @@ namespace FestivalVar.Controllers
                 Message = "draw.get.success",
                 Data = model,
             };
-
+            
             return Created("", response);
         }
 

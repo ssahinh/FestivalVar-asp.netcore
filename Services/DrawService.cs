@@ -10,7 +10,6 @@ namespace FestivalVar.Services
     public class DrawService : IDrawService
     {
         private readonly DataContext _context;
-        private readonly UserManager<>
         
         public DrawService(DataContext context)
         {
@@ -27,9 +26,8 @@ namespace FestivalVar.Services
             return await _context.Draws.SingleOrDefaultAsync(x => x.Id == Id);
         }
 
-        public async Task<Draw> JoinDraw()
+        public Task<Draw> JoinDraw()
         {
-            var user = _context.User
+            throw new System.NotImplementedException();
         }
     }
-}
