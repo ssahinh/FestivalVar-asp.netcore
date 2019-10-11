@@ -36,7 +36,12 @@ namespace FestivalVar.Controllers
             var currentUserName = currentUser.FindFirst(ClaimTypes.NameIdentifier).Value;
             IdentityUser user = await _userManager.FindByNameAsync(currentUserName);
             
-            return Ok(user);
+            return Ok(new UserMeResponse
+            {
+                Data = user,
+                Code = "success",
+                Message = "user.me.success"
+            });
         }
         
         
