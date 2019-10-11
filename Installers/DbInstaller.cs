@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using FestivalVar.Data;
+using FestivalVar.Domain;
 using FestivalVar.Services;
 
 namespace FestivalVar.Installers
@@ -18,6 +19,8 @@ namespace FestivalVar.Installers
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<DataContext>();
+
+            services.AddIdentity<ApplicationUser, IdentityRole>();
 
             services.AddScoped<IFestivalService, FestivalService>();
             services.AddScoped<ICategoryService, CategoryService>();
