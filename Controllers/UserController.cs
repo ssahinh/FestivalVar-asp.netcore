@@ -32,7 +32,9 @@ namespace FestivalVar.Controllers
         [HttpGet("me")]
         public async Task<IActionResult> GetUser()
         {
-            var user = _userManager.GetUserId(User);
+            ClaimsPrincipal currentUser = this.User;
+            var currentUserName = currentUser.FindFirst(ClaimTypes.NameIdentifier).Value;
+            IdentityUser user = await _userManager.FindByNameAsync(currentUserName);
             
             return Ok(user);
         }
