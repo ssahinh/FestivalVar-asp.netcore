@@ -17,7 +17,9 @@ namespace FestivalVar.Services
 
         public async Task<List<Category>> GetCategoriesAsync()
         {
-            return await _dataContext.Categories.ToListAsync();
+            return await _dataContext.Categories
+                .Include(category => category.Festivals)
+                .ToListAsync();
         }
 
         public async Task<Category> GetCategoryById(int Id)
