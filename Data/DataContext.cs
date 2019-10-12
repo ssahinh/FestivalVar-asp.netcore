@@ -54,7 +54,6 @@ namespace FestivalVar.Data
                     Id = 1,
                     Title = "Festival1Title",
                     City = "Adana",
-                    CategoryId = 1
                 }
             );
             
@@ -64,7 +63,6 @@ namespace FestivalVar.Data
                     Id = 2,
                     Title = "Festival2Title",
                     City = "Ankara",
-                    CategoryId = 1
                 }
             );
             
@@ -74,7 +72,6 @@ namespace FestivalVar.Data
                     Id = 3,
                     Title = "Festival3Title",
                     City = "Istanbul",
-                    CategoryId = 1
                 }
             );
         }

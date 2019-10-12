@@ -9,7 +9,7 @@ namespace FestivalVar.Migrations
             migrationBuilder.AddColumn<int>(
                 name: "CategoryId",
                 table: "Festivals",
-                nullable: false,
+                nullable: true,
                 defaultValue: 0);
 
             migrationBuilder.CreateIndex(

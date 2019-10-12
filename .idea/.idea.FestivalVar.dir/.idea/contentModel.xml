@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\sahin\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\sahin\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_.19.00" t="ExcludeRecursive" />
+    <e p="C:\Users\sahin\RiderProjects\FestivalVar-asp.netcore" t="IncludeRecursive">
+      <e p=".gitignore" t="Include" />
+      <e p="app.config" t="Include" />
+      <e p="appsettings.Development.json" t="Include" />
+      <e p="appsettings.json" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Controllers" t="Include">
+        <e p="AuthController.cs" t="Include" />
+        <e p="CategoryController.cs" t="Include" />
+        <e p="ContractController.cs" t="Include" />
+        <e p="DrawController.cs" t="Include" />
+        <e p="FestivalController.cs" t="Include" />
+        <e p="UserController.cs" t="Include" />
+      </e>
+      <e p="Data" t="Include">
+        <e p="DataContext.cs" t="Include" />
+      </e>
+      <e p="Domain" t="Include">
+        <e p="ApplicationUser.cs" t="Include" />
+        <e p="AuthenticationResult.cs" t="Include" />
+        <e p="Category.cs" t="Include" />
+        <e p="Contract.cs" t="Include" />
+        <e p="Draw.cs" t="Include" />
+        <e p="Festival.cs" t="Include" />
+        <e p="UserMeResult.cs" t="Include" />
+        <e p="Utils" t="Include">
+          <e p="Requests" t="Include">
+            <e p="CreateFestivalRequest.cs" t="Include" />
+            <e p="UserLoginRequest.cs" t="Include" />
+            <e p="UserRegisterRequest.cs" t="Include" />
+          </e>
+          <e p="Responses" t="Include">
+            <e p="AuthFailedResponse.cs" t="Include" />
+            <e p="AuthSuccessResponse.cs" t="Include" />
+            <e p="BaseResponse.cs" t="Include" />
+            <e p="CategoryResponse.cs" t="Include" />
+            <e p="DrawResponse.cs" t="Include" />
+            <e p="FestivalResponse.cs" t="Include" />
+            <e p="UserMeResponse.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="FestivalVar.csproj" t="IncludeRecursive" />
+      <e p="Installers" t="Include">
+        <e p="DbInstaller.cs" t="Include" />
+        <e p="IInstaller.cs" t="Include" />
+        <e p="InstallerExtensions.cs" t="Include" />
+        <e p="MvcInstaller.cs" t="Include" />
+      </e>
+      <e p="Migrations" t="Include">
+        <e p="20191007210700_InitialMigration.cs" t="Include" />
+        <e p="20191007210700_InitialMigration.Designer.cs" t="Include" />
+        <e p="20191007212419_FestivalMigration.cs" t="Include" />
+        <e p="20191007212419_FestivalMigration.Designer.cs" t="Include" />
+        <e p="20191008190242_CategoryMigration.cs" t="Include" />
+        <e p="20191008190242_CategoryMigration.Designer.cs" t="Include" />
+        <e p="20191008201820_ContractMigration.cs" t="Include" />
+        <e p="20191008201820_ContractMigration.Designer.cs" t="Include" />
+        <e p="20191008211906_DrawMigration.cs" t="Include" />
+        <e p="20191008211906_DrawMigration.Designer.cs" t="Include" />
+        <e p="20191010211736_DrawMigration2.cs" t="Include" />
+        <e p="20191010211736_DrawMigration2.Designer.cs" t="Include" />
+        <e p="20191010212234_DrawUserListMigration.cs" t="Include" />
+        <e p="20191010212234_DrawUserListMigration.Designer.cs" t="Include" />
+        <e p="20191011225811_FestivalSeedMigration.cs" t="Include" />
+        <e p="20191011225811_FestivalSeedMigration.Designer.cs" t="Include" />
+        <e p="20191012225458_CategoryRemoveMigration.cs" t="Include" />
+        <e p="20191012225458_CategoryRemoveMigration.Designer.cs" t="Include" />
+        <e p="DataContextModelSnapshot.cs" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp2.2" t="Include">
+            <e p="FestivalVar.AssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Options" t="Include">
+        <e p="JwtSettings.cs" t="Include" />
+        <e p="SwaggerOptions.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="launchSettings.json" t="Include" />
+      </e>
+      <e p="README.md" t="Include" />
+      <e p="Services" t="Include">
+        <e p="AuthService.cs" t="Include" />
+        <e p="CategoryService.cs" t="Include" />
+        <e p="ContractService.cs" t="Include" />
+        <e p="DrawService.cs" t="Include" />
+        <e p="FestivalService.cs" t="Include" />
+        <e p="IAuthService.cs" t="Include" />
+        <e p="ICategoryService.cs" t="Include" />
+        <e p="IContractService.cs" t="Include" />
+        <e p="IDrawService.cs" t="Include" />
+        <e p="IFestivalService.cs" t="Include" />
+      </e>
+      <e p="Startup.cs" t="Include" />
+    </e>
+  </component>
+</project>

@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\sahin\\RiderProjects\\FestivalVar\\FestivalVar\\FestivalVar.csproj",
+    "projectUniqueName": "C:\\Users\\sahin\\RiderProjects\\FestivalVar-asp.netcore\\FestivalVar.csproj",
     "projectName": "FestivalVar",
-    "projectPath": "C:\\Users\\sahin\\RiderProjects\\FestivalVar\\FestivalVar\\FestivalVar.csproj",
-    "outputPath": "C:\\Users\\sahin\\RiderProjects\\FestivalVar\\FestivalVar\\obj\\",
+    "projectPath": "C:\\Users\\sahin\\RiderProjects\\FestivalVar-asp.netcore\\FestivalVar.csproj",
+    "outputPath": "C:\\Users\\sahin\\RiderProjects\\FestivalVar-asp.netcore\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

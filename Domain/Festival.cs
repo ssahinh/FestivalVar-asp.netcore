@@ -12,10 +12,5 @@ namespace FestivalVar.Domain
         public string Title { get; set; }
         
         public string City { get; set; }
-
-        public int CategoryId { get; set; }
-        
-        [ForeignKey("CategoryId")]
-        public Category Category;
     }
 }
