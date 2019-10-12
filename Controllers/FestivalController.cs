@@ -42,12 +42,12 @@ namespace FestivalVar.Controllers
             var festival = new Festival
             {
                 Title = request.Title,
-                City = request.City,
+                City = request.City
             };
 
             await _festivalService.CreateFestivalAsync(festival);
 
-            var response = new BaseResponse<Festival>()
+            var response = new BaseResponse<Festival>
             {
                 Data = festival,
                 Message = "festival.create.success",
