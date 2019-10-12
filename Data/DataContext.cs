@@ -47,6 +47,36 @@ namespace FestivalVar.Data
                     Title = "Diger"
                 }
             );
+
+            modelBuilder.Entity<Festival>().HasData(
+                new Festival
+                {
+                    Id = 1,
+                    Title = "Festival1Title",
+                    City = "Adana",
+                    CategoryId = 1
+                }
+            );
+            
+            modelBuilder.Entity<Festival>().HasData(
+                new Festival
+                {
+                    Id = 2,
+                    Title = "Festival2Title",
+                    City = "Ankara",
+                    CategoryId = 1
+                }
+            );
+            
+            modelBuilder.Entity<Festival>().HasData(
+                new Festival
+                {
+                    Id = 3,
+                    Title = "Festival3Title",
+                    City = "Istanbul",
+                    CategoryId = 1
+                }
+            );
         }
 
     }

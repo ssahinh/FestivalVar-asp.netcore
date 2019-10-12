@@ -40,7 +40,7 @@ namespace FestivalVar.Controllers
 
             return Ok(new AuthSuccessResponse
             {
-                Token = authResponse.Token,
+                Token = authResponse.Token
             });
         }
         

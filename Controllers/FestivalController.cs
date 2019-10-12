@@ -49,9 +49,9 @@ namespace FestivalVar.Controllers
 
             var response = new BaseResponse<Festival>()
             {
-                Code = "200",
-                Message = "success",
-                Data = festival
+                Data = festival,
+                Message = "festival.create.success",
+                Code = "success"
             };
 
             return Created("",response);
