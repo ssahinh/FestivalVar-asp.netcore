@@ -14,10 +14,10 @@ namespace FestivalVar.Services
 {
     public class AuthService : IAuthService
     {
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly JwtSettings _jwtSettings;
 
-        public AuthService(UserManager<IdentityUser> userManager, JwtSettings jwtSettings)
+        public AuthService(UserManager<ApplicationUser> userManager, JwtSettings jwtSettings)
         {
             _userManager = userManager;
             _jwtSettings = jwtSettings;
@@ -35,7 +35,7 @@ namespace FestivalVar.Services
                 };
             }
             
-            var newUser = new IdentityUser
+            var newUser = new ApplicationUser
             {
                 Email =  email,
                 UserName = email
@@ -79,7 +79,7 @@ namespace FestivalVar.Services
             return GeneratedAuthenticationResultForUser(user);
         }
         
-        private AuthenticationResult GeneratedAuthenticationResultForUser(IdentityUser newUser)
+        private AuthenticationResult GeneratedAuthenticationResultForUser(ApplicationUser newUser)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_jwtSettings.Secret);

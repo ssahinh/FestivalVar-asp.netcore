@@ -8,7 +8,7 @@ namespace FestivalVar.Domain
         public string Token { get; set; }
         
         public bool Success { get; set; }
-        public IdentityUser Data { get; set; }
+        public ApplicationUser Data { get; set; }
 
         public IEnumerable<string> Errors { get; set; }
     }

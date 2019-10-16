@@ -13,6 +13,6 @@ namespace FestivalVar.Domain
         
         public string Description { get; set; }
     
-        public List<IdentityUser> Users { get; set; }
+        public List<ApplicationUser> Users { get; set; }
     }
 }

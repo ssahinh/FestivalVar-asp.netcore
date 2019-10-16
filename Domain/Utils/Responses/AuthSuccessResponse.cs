@@ -6,6 +6,6 @@ namespace FestivalVar.Responses
     public class AuthSuccessResponse : BaseResponse<AuthenticationResult>
     {
         public string Token { get; set; }
-        public IdentityUser Data { get; set; }
+        public ApplicationUser Data { get; set; }
     }
 }

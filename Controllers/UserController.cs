@@ -22,9 +22,9 @@ namespace FestivalVar.Controllers
     [ApiController]
     public class UserController : Controller
     {
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public UserController(UserManager<IdentityUser> userManager)
+        public UserController(UserManager<ApplicationUser> userManager)
         {
             _userManager = userManager;
         }
@@ -34,7 +34,7 @@ namespace FestivalVar.Controllers
         {
             ClaimsPrincipal currentUser = this.User;
             var currentUserName = currentUser.FindFirst(ClaimTypes.NameIdentifier).Value;
-            IdentityUser user = await _userManager.FindByNameAsync(currentUserName);
+            ApplicationUser user = await _userManager.FindByNameAsync(currentUserName);
             
             return Ok(new UserMeResponse
             {

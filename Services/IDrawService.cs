@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using FestivalVar.Domain;
+using FestivalVar.Domain.Utils.Responses;
 using Microsoft.AspNetCore.Identity;
 
 namespace FestivalVar.Services
@@ -11,6 +12,6 @@ namespace FestivalVar.Services
 
         Task<Draw> GetDrawById(int Id);
 
-        Task<Draw> JoinDraw();
+        Task<DrawResponse> JoinDraw(ApplicationUser user, int DrawId);
     }
 }
