@@ -18,7 +18,9 @@ namespace FestivalVar.Services
 
         public async Task<List<Festival>> GetFestivalsAsync()
         {
-            return await _dataContext.Festivals.ToListAsync();
+            return await _dataContext.Festivals
+                .Include(festival => festival.Category)
+                .ToListAsync();
         }
 
         public async Task<bool> CreateFestivalAsync(Festival festival)

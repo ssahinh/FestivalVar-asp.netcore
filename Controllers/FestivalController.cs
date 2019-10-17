@@ -33,7 +33,7 @@ namespace FestivalVar.Controllers
                 Data = model,
             };
             
-            return Created("",response);
+            return Ok(response);
         }
 
         [HttpPost]
