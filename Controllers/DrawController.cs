@@ -38,21 +38,15 @@ namespace FestivalVar.Controllers
             
             return Created("", response);
         }
-
-        [HttpPost("{DrawId}")]
-        public async Task<IActionResult> UserJoinDraw([FromRoute] int DrawId)
+        
+        [HttpGet("getUser")]
+        public async Task<ApplicationUser> GetUser()
         {
             ClaimsPrincipal currentUser = this.User;
             var currentUserName = currentUser.FindFirst(ClaimTypes.NameIdentifier).Value;
             ApplicationUser user = await _userManager.FindByNameAsync(currentUserName);
 
-            var model = await _drawService.JoinDraw(user, DrawId);
-            
-            return Ok(new DrawResponse
-            {
-                Code = "success",
-                Message = "draw.join.success",
-            });
+            return user;
         }
         
     }

@@ -9,6 +9,5 @@ namespace FestivalVar.Domain
         public ICollection<IdentityUserLogin<string>> Logins { get; set; }
         public ICollection<IdentityUserToken<string>> Tokens { get; set; }
         public ICollection<IdentityUserRole<string>> UserRoles { get; set; }
-        public Draw Draw;
     }
 }

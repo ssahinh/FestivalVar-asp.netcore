@@ -29,8 +29,6 @@ namespace FestivalVar.Migrations
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken();
 
-                    b.Property<int?>("DrawId");
-
                     b.Property<string>("Email")
                         .HasMaxLength(256);
 
@@ -60,8 +58,6 @@ namespace FestivalVar.Migrations
                         .HasMaxLength(256);
 
                     b.HasKey("Id");
-
-                    b.HasIndex("DrawId");
 
                     b.HasIndex("NormalizedEmail")
                         .HasName("EmailIndex");
@@ -285,13 +281,6 @@ namespace FestivalVar.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
-                });
-
-            modelBuilder.Entity("FestivalVar.Domain.ApplicationUser", b =>
-                {
-                    b.HasOne("FestivalVar.Domain.Draw")
-                        .WithMany("Users")
-                        .HasForeignKey("DrawId");
                 });
 
             modelBuilder.Entity("FestivalVar.Domain.Festival", b =>

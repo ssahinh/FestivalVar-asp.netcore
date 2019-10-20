@@ -12,6 +12,5 @@ namespace FestivalVar.Services
 
         Task<Draw> GetDrawById(int Id);
 
-        Task<DrawResponse> JoinDraw(ApplicationUser user, int DrawId);
     }
 }
