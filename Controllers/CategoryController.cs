@@ -25,6 +25,11 @@ namespace FestivalVar.Controllers
         {
             var model = await _categoryService.GetCategoriesAsync();
 
+            if (model == null)
+            {
+                return NotFound();
+            }
+            
             var response = new CategoryResponse()
             {
                 Code = "success",

@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace FestivalVar.Domain
 {
-    [DataContract(IsReference = true)]
     public class Festival
     {
         [Key]

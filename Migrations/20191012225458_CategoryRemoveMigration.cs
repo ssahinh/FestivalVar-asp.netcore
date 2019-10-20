@@ -44,6 +44,12 @@ namespace FestivalVar.Migrations
                 principalTable: "Categories",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
+
+            migrationBuilder.InsertData(
+                table: "Contracts",
+                columns: new[] {"Id", "Title", "Description"},
+                values: new object[] {1, "Sözleşme 1", "Sözleşme 1 İçerik"}
+            );
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
