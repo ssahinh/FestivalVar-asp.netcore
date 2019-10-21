@@ -3,7 +3,7 @@ using FestivalVar.Responses;
 
 namespace FestivalVar.Domain.Utils.Responses
 {
-    public class PostResponse : BaseResponse<Post>
+    public class CreatePostResponse : BaseResponse<Post>
     {
         
     }
