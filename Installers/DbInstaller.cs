@@ -25,6 +25,7 @@ namespace FestivalVar.Installers
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IDrawService, DrawService>();
             services.AddScoped<IContractService, ContractService>();
+            services.AddScoped<IPostService, PostService>();
         }
     }
 }

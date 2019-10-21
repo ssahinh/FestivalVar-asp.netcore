@@ -20,6 +20,8 @@ namespace FestivalVar.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<Contract> Contracts { get; set; }
         public DbSet<Draw> Draws { get; set; }
+        
+        public DbSet<Post> Posts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
